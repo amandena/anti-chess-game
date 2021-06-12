@@ -1,10 +1,17 @@
 import './App.css'
+import '@babel/polyfill'
+import '@styles/css/main.css'
+import { Provider } from 'react-redux'
+import store from '@redux/store'
+import AntiChess from '@pages/AntiChess.jsx'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      App
-    </div>
+    <>
+      <Provider store={store}>
+        <AntiChess />
+      </Provider>
+    </>
   )
 }
 
