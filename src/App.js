@@ -1,9 +1,9 @@
 import './App.css'
-import '@babel/polyfill'
-import '@styles/css/main.css'
+// import '@babel/polyfill'
+import './App.css'
 import { Provider } from 'react-redux'
-import store from '@redux/store'
-import AntiChess from '@pages/AntiChess.jsx'
+// import store from '@redux/store'
+import AntiChess from './components/AntiChess'
 
 const App = () => {
   return (
